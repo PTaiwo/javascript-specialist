@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>Variables</title>
+        <script>
+            var age;  //Public or script scope
+            
+            window.onload = function() {
+                
+                var score; //Variable declaration
+                score = 1000; //Initialize the variable
+                
+                age = 42; //Combined declaration and initialization
+                out();
+                
+            }
+            
+            function out()
+            {
+                document.getElementById('result').innerHTML = age;
+            }
+        </script>
+    </head>
+    <body>
+        <div id="result"></div>
+    </body>
+</html>
