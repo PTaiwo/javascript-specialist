@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>If</title>
+    <script>
+    window.onload = function()
+    {
+        var age = 18;
+        var citizen = false;
+        
+        if(age >= 18 && citizen == true)
+            {
+                document.getElementById('result').innerHTML ="<h1>You may legally vote.</h1>";
+            }
+        
+        var age2 =15;
+        var parentPresent = true;
+        
+        if (age >= 17 || parentPresent == true)
+            {
+                document.getElementById('result').innerHTML += "<p>You also may see the movie.</p>";
+            }
+    }
+    
+    </script>
+    </head>
+    <body>
+        <div id="result"></div>
+    </body>
+</html>
