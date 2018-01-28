@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mouse Events</title>
+        <style>
+            #target
+            {
+                width: 400px;
+                height: 400px;
+                background-color: #990000;
+            }
+        
+        </style>
+        <script>
+            var target;
+            var result;
+            
+            window.onload=function()
+            {
+                target = document.getElementById('target');
+                result = document.getElementById('result');
+                target.onclick = function()
+                {
+                   result.innerHTML = "<h3>Click event!</h3>"; 
+                }
+                
+                target.onmouseout = function()
+                {
+                    result.innerHTML = "<h3>Mouse out!</h3>";
+                }
+                
+                target.addEventListener('mouseover', function(e)
+                                       {
+                    result.innerHTML = "<h3>Mouse over event!</h3>";
+                    console.log(e);
+                });
+                
+            }
+        
+        </script>
+    </head>
+    <body>
+        <div id="target"></div>
+        <div id="result"></div>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Events</title>
+        <script>
+            window.onload=function()
+            {
+                var myForm = document.getElementById('myForm');
+                myForm.onsubmit = function()
+                {
+                    //alert(document.getElementById('name').value);
+                    if(document.getElementById('name').value=="Patrick")
+                        {
+                            return false;
+                        }
+                }
+            }
+        </script>
+    
+    </head>
+    <body>
+        <form id="myForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" /><br/>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" /><br/>
+            <br/>
+            <button type="submit">Submit</button>
+        </form>
+        
+    </body>
+</html>
