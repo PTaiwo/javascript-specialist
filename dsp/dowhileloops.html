@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Do While Loops</title>
+        <script>
+        window.onload = function()
+        {
+            var counter = 0;
+            do            
+                {
+                    document.getElementById('result').innerHTML += "<br/>" + counter;
+                    counter++;
+                } while (counter < 15);
+            
+            var x = 1;
+               do
+                {
+                    alert(x);
+                    x--;
+                }while (x < 0)
+        }
+        </script>
+    </head>
+    <body>
+        <div id="result"></div>
+    </body>
+</html>
