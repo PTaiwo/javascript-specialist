@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Function Parameters</title>
+        <script>
+            function calculate(atBats,hits,walks)
+            {
+                var ba =hits/(atBats-walks);
+                document.getElementById('result').innerHTML = ba;
+            }
+            
+            window.onload = function()
+            {
+                calculate(235,83,15);
+            }
+        
+    
+           /* function calculateDogYears(ageInHumanYears)
+            {
+               var dogYears= ageInHumanYears * 7;
+               document.getElementById('result').innerHTML = "<h1>" + dogYears + "</h1>";
+            }
+            
+            window.onload = function()
+            {
+                calculateDogYears(6);
+            } */
+        </script>
+    </head>
+    <body>
+        <div id="result"></div>
+    </body>
+</html>
