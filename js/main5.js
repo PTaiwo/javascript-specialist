@@ -8,10 +8,10 @@ function runCheckHours()
 {
     var hoursSlept = document.getElementById('hoursInput').value;
     
-    CheckHours(hoursSlept);
+    checkHours(hoursSlept);
 }
 
-function checkHours(numHours)
+function checkHours(hoursSlept)
 {
     if (hoursSlept >= 8)
         {
