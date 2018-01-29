@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Array Loops</title>
+        <script>
+            window.onload=function()
+            {
+                var cars = ["Jeep","Toyota", "BMW", "Ford", "Honda", "Audi", "Lamborghini"];
+                var ticks = cars.length;
+                var x = 0;
+                var out = "";
+                while(x < ticks)
+                    {
+                        out += cars[x];
+                        out += "<br/>";
+                        x++;
+                    }
+                document.getElementById('result').innerHTML = out;
+                
+                var cities= ["Miami", "New York", "Boston", "Chicago", "New Orleans", "Austin"];
+                
+                var out ="";
+                for (var z=0; z < cities.length; x++)
+                {
+                    out+= cities[z];
+                    out+= "<br/>";
+                    z++;
+                }
+                document.getElementById('result').innerHTML += out;
+            }
+        </script>
+    </head>
+    <body>
+        <div id="result"></div>
+    </body>
+</html>

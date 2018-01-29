@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Array Functions</title>
+        <script>
+            window.onload=function()
+            {
+                 years = [1999,2000,2001,2002,2003,2004,2005,2006,2007,2008 ];
+                
+                years.push(2009);
+                years.push(2010);
+                years.pop();
+                years.forEach(myFunction);
+                console.log(years.indexOf(2008));
+                
+                names = ["Fred", "Tom", "Mark", "Adam", "Brett"];
+                console.log(names.sort());
+            }
+            
+            function myFunction(item, index)
+            {
+                document.getElementById('result').innerHTML += index + "|" + item + "<br/>";
+            }
+        </script>
+    </head>
+    <body>
+        <div id="result"></div>
+    </body>
+</html>
