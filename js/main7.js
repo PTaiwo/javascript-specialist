@@ -27,7 +27,7 @@ function displayName(e)
 	
 		var name = prompt("What is your name?");
 	{
-		document.getElementById('text2').innerHTML += "<h3><em> " + name + " </em></h3>";
+		document.getElementById('text2').innerHTML += "<h3><em>Your beautiful name is  " + name + ".</em></h3>";
 				
 	}
 	
