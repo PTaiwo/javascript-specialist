@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Date</title>
+        <script>
+            window.onload=function()
+            {
+                //Yesterday's Date
+                var d = new Date();
+                d.setFullYear(2020);
+                d.setHours(18);
+                
+                document.getElementById('result').innerHTML = d.toJSON();
+                
+               
+            }
+        </script>
+    </head>
+    <body>
+        <div id="result"></div>
+    </body>
+</html>

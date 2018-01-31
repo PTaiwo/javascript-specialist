@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Date</title>
+        <script>
+            window.onload=function()
+            {
+                //Yesterday's Date
+                var d = new Date(2017,1,5, 12,00);
+                document.getElementById('result').innerHTML = d;
+                console.log(d.getDate());
+                
+                var c = new Date();
+                document.getElementById('result').innerHTML = Date.now();
+                
+               
+            }
+        </script>
+    </head>
+    <body>
+        <div id="result"></div>
+    </body>
+</html>

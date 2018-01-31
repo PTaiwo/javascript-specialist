@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Date</title>
+        <script>
+            window.onload=function()
+            {
+                var d = new Date();
+                var out = "";
+                out += "Day of the Month " + d.getDate();
+                out += "<br/>Year: " + d.getFullYear();
+                out += "<br/>Time: " + d.getHours() + ":" + d.getMinutes();
+                document.getElementById('result').innerHTML = out;                
+            }
+        </script>
+    </head>
+    <body>
+        <div id="result"></div>
+    </body>
+</html>
