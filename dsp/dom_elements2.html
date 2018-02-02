@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dom Elements</title>
+        <script>
+        window.onload=function()
+        {
+            var theList = document.getElementById('myList');
+            var node = document.createElement("LI");
+            var text = document.createTextNode("Yes");
+            node.appendChild(text);
+            //console.log(node);
+            theList.appendChild(node);
+            
+            var node2 = document.createElement("LI");
+            var text2 = document.createTextNode("Scandal");
+            node2.appendChild(text2);
+            theList.appendChild(node2);
+            
+            theList.removeChild(theList.childNodes[1]);
+        }
+        
+        </script>
+    </head>
+    <body>
+        <ul id="myList">
+            <li>Steel Pulse</li>
+            <li>Aswad</li>
+            <li>Black Uhuru</li>
+            <li>Mighty Diamonds</li>
+        </ul>
+        
+    </body>
+</html>

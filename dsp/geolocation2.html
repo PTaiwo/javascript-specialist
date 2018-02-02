@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>Geolocation</style>
+    </head>
+    <script>
+        window.onload = function()
+        {
+            options = { enableHighAccuracy: false, timeout: 5000, maximumAge: 1000};
+            watch = navigator.geolocation.watchPosition(success, fail);
+            
+            document.getElementById('btnStop').addEventListener('click', stopWatch);
+        }
+        
+        function success(position)
+        {
+            console.log(position);
+            var lat = position.coords.latitude;
+            var long = position.coords.longitude;
+            document.getElementById('lat').innerHTML = lat;
+            document.getElementById('long').innerHTML = long;
+        }
+        
+        function stopWatch(event)
+        {
+            navigator.geolocation.clearWatch(watch);
+        }
+        
+        function fail(e)
+        {
+            alert(e.message);
+        }
+    </script>
+    <body>
+        <p>Latitude:<output id="lat"></output></p>
+        <p>Longitude:<output id="long"></output></p>
+        <button id="btnStop">Stop watching me</button>
+        
+    </body>
+</html>
