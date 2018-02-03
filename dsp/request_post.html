@@ -8,20 +8,17 @@
         window.onload = function()
         {
             xmlhttp = new XMLHttpRequest();
-            document.getElementById('btnGetInfo').addEventListener('click', getService)
-        }
-        
-        function getService(e)
-        {
-            var address = document.getElementById('address').value;
-            
-            var url = "https://maps.googleapis.com/maps/api/geocode/json?address=" + address + "&sensor=false";
-            
-            xmlhttp.onreadystatechange = process;            
+            var url = "https://makemeapassword.org/api/v1/passphrase/plain?pc=1&wc=3&sp=n";
+            xmlhttp.onreadystatechange = process;
             console.log(url);
-            xmlhttp.open("GET", url, true);
+            
+            xmlhttp.open("POST", url, true);
+            xmlhttp.setRequestHeader("wc", "1");
+            xmlhttp.setRequestHeader("pc", "1");
+            xmlhttp.setRequestHeader("sp", "n");
             xmlhttp.send();
         }
+            
             
         function process()
         {
